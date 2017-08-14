@@ -1,0 +1,211 @@
+*{
+	margin:0;
+	padding:0;
+}
+div,h1,img,p{
+	display:block;
+}
+#wrapper{
+    background: #f5f5f5;
+    height:100%;
+    color: #666;
+    font-size: 12px;
+    font-family: Arial,'Microsoft YaHei';
+    /*position: relative;*/
+     min-width: 420px;
+}
+.page {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 420px;
+}
+.page h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: block;
+    font-size: 2em;
+    /*
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;*/
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.content {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}/*
+.content .left-box {
+    float: left;
+}
+/*右侧登录框设计*/
+.content .right-box {
+    width: 380px;
+    /*float: right;*/
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border: 1px solid #dcdcdc;
+}
+.content .right-box .title {
+   
+    color: #666;
+    line-height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-left: -40px;
+    text-indent: 40px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.content .right-box .register {
+    float: right;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 40px;
+}
+.content .form {
+    padding-right: 40px;
+}
+.content .right-box .error-tips {
+    background: url("http://s6.mogujie.cn/pic/140408/o613k_kqzfunswozbg2s2ugfjeg5sckzsew_16x16.png") 12px no-repeat #fffff8;
+    border: 1px solid #ffd797;
+    line-height: 30px;
+    color: #ff5783;
+    width: 240px;
+    padding-left: 40px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+}
+.content .item {
+    margin-top: 15px;
+    overflow: hidden;
+}
+.content .phone {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+}
+.content .ui-input {
+    background: none;
+    border: 1px solid #CFCFCF;
+    /*height: 28px;
+    line-height: 1;*/
+    padding: 0 6px 0 0;
+    text-indent: 6px;
+    float: left;
+}
+input{
+    resize: none;
+    outline: none;
+    font-family: Arial;
+    word-wrap: break-word;
+    margin: 0em;
+    font: 13.3333px Arial;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+.content .password {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+}
+.content .submit {
+    background-color: #ff3366;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border: none;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+}
+label {
+    cursor: default;
+}
+.content .right-box .forget {
+    color: #ff3366;
+    text-decoration: underline;
+    float: right;
+}
+.fast_login {
+    margin-top: 20px;
+    border-top: 1px dotted #ccc;
+    margin-right: 40px;
+}
+.fast_login h3 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.fast_way:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+.fast_login .fast_way a.qq_way {
+    background-position: -6px -120px;
+}
+.fast_login .fast_way a {
+    float: left;
+    width: 86px;
+    height: 35px;
+    background: url("http://moguimg.u.qiniudn.com/p1/161009/idid_ie4tqmbwmy4damjymizdambqgqyde_200x300.png") no-repeat;
+}
+.fast_login .fast_way a.sina_way {
+    background-position: -6px -160px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.fast_login .fast_way a {
+    float: left;
+    width: 86px;
+    height: 35px;
+    background: url("http://moguimg.u.qiniudn.com/p1/161009/idid_ie4tqmbwmy4damjymizdambqgqyde_200x300.png") no-repeat;
+}
+.fast_login .fast_way a.weixin_way {
+    background-position: -6px -200px;
+}
+.fast_login .fast_way a {
+    float: left;
+    width: 86px;
+    height: 35px;
+    background: url("http://moguimg.u.qiniudn.com/p1/161009/idid_ie4tqmbwmy4damjymizdambqgqyde_200x300.png") no-repeat;
+}
+@media (max-width: 520px) {
+            /* Enable use of floated navbar text */
+.navbar-text.pull-right {
+    float: none;
+    margin-top:120px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
